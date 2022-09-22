@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="es en">
+
+    <head> 
+
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width">
+        <title>Juego del ahorcado</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <img src="imagenes/Logo.png" alt="Logo" class="logo-alura"><h1 class="titulo-ahorcado">Challenge 2 - Juego del ahorcado</h1>
+            
+
+        </header>
+
+        <main>
+
+            <section class="bloque1">
+
+                <div class="caja-botonesInicio" >
+
+                    <button class="boton-iniciarJuego" >Iniciar juego</button>
+    
+                    <button class="boton-AgregarNueva">Agregar nueva palabra</button>
+    
+                </div>
+
+            </section>
+
+            <section class="bloque2">
+
+                <textarea placeholder="Ingrese una palabra aquí" class="ingresar-nuevaPalabra"></textarea>
+
+                <div>
+
+                    <h1 class="maximo-letras"> Ingrese solo un máximo de 8 letras</h1>
+                    
+                </div>
+
+                <div class="caja-botonesPalabra">
+
+                    <button class="boton-guardarEmpezar">Guardar y empezar</button>
+
+                    <button class="boton-cancelar">Cancelar</button>
+
+                </div>
+
+            </section>
+
+            <section class="bloque3">
+
+                <img src="imagenes/horca/0.png" alt="imagen-horca" class="imagen-ahorcado">
+
+                <div>
+
+                    <p class="letras-erradas"></p>
+
+                </div>
+
+                <div class="caja-palabraAdvinar">
+
+                    <p class="palabraAdivinar"></p>
+
+                </div>
+
+                <div class="caja-palabraAdivinarUsuario">
+
+                    <p class="palabraAdivinarUsuario"></p>
+
+                </div>
+
+                <div class="caja-mensajeVictoria">
+
+                    <p class="mostrarMensajeVictoria"></p>
+                    <img src="imagenes/winner.gif" alt="imagen-ganador" class="img-ganador">
+
+                </div>
+
+                <div>
+
+                    <p class="mostrarMensajeDerrota"></p>
+
+                </div>
+
+                <div class="caja-botonesPalabra">
+
+                    <button class="boton-nuevoJuego">Nuevo juego</button>
+                    <button class="boton-desistir">Desistir</button>
+
+                </div>
+
+                <div class="caja-botonesPalabraUsuario">
+
+                    <button class="boton-nuevoJuegoUs">Nuevo juego</button>
+                    <button class="boton-desistirUs">Desistir</button>
+
+                </div>                  
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="caja-footer">
+
+            <p class="pie-pagina">Dev en formación &#129299;</p>
+            <img src="imagenes/footer-img.png" alt="imagen-footer" class="img-footer">
+            <img src="imagenes/img-one.png" alt="img-one">
+
+            </div>
+            
+        </footer>
+        
+        <script src="ahorcado.js"></script>
+        <script src="palabra_usuario.js"></script>
+
+    </body>
+    
+</html>

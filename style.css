@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Concert One', cursive;
+    background: url(imagenes/horca.jpg);
+    background-size: cover;
+
+}
+
+.logo-alura{
+
+    margin: 40px 0 0 84px;
+
+}
+
+.titulo-ahorcado{
+
+    text-align: center;
+    font-size: 48px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0px 10px 350px;
+
+}
+
+main{
+
+    background: rgba(255, 255, 255, 0.8);
+
+}
+
+.caja-botonesInicio {
+
+    text-align: center;
+
+}
+
+.boton-iniciarJuego {
+
+    margin: 202px 586px 0 561px;
+    width: 317px;
+    height: 114px;
+    background:  #f29945;
+    border: 2px solid  #f29945;
+    padding: 24px;
+    font-size: 18px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.boton-iniciarJuego:hover{
+
+    background: #dd6026;
+    border: 2px solid  #dd6026;
+}
+
+.boton-AgregarNueva {
+    
+    display: inline-block;
+    margin: 62px 605px 0 583px;
+    width: 232px;
+    background-color: antiquewhite;
+    border: 2px solid  #f29945;
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.boton-AgregarNueva:hover{
+
+    background: #f3b47a;
+    border: 2px solid  #f29945;
+}
+
+.bloque2 {
+
+    text-align: center;
+
+}
+
+.ingresar-nuevaPalabra{
+
+    margin: 100px 0 0 100px;
+    width: 430px;
+    height: 48px;
+    display: none;
+    resize: none;
+    font-size: 32px;
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.4;
+
+}
+
+.ingresar-nuevaPalabra:focus{
+
+    outline:none;
+
+}
+
+.maximo-letras{
+
+    display: none;
+    margin: 363px 8px 17px 100px;
+    
+}
+
+.maximo-letras:before{
+
+    content: url(imagenes/Vector.png);
+    
+}
+
+.boton-guardarEmpezar{
+
+    margin: 16px 0 0 100px;
+    display: none;
+    width: 332px;
+    height: 67px;
+    background:  #f29945;
+    border: 2px solid  #f29945;
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 400ms;
+    
+}
+
+.boton-guardarEmpezar:hover{
+
+    background: #dd6026;
+    border: 2px solid  #dd6026;
+}
+
+.boton-cancelar{
+
+    margin-left: 10px;
+    display: none;
+    width: 332px;
+    height: 67px;
+    background-color: antiquewhite;
+    border: 2px solid  #f29945;
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.boton-cancelar:hover{
+
+    background: #f3b47a;
+    border: 2px solid  #f29945;
+}
+
+.bloque3{
+
+    text-align: center;
+
+}
+
+.imagen-ahorcado {
+
+    width: 294px;
+    height: 360px;
+    display: none;
+
+}
+
+.letras-erradas span {
+
+    font-size: 48px;
+    height: 30px;
+
+}
+
+.palabraAdivinar{
+
+    height: 110px;
+
+}
+
+.palabraAdivinar span {
+
+    font-size: 48px;
+    border-bottom: 4px solid #24a4fc;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    margin: 30px 6px 0 0;
+    display: inline-block;
+
+}
+
+.caja-palabraAdivinarUsuario{
+
+    height: 110px;
+
+}
+
+.palabraAdivinarUsuario{
+
+    display: inline-block;
+
+}
+
+.palabraAdivinarUsuario span {
+
+    font-size: 48px;
+    border-bottom: 4px solid #24a4fc;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    margin: 30px 6px 0 0;
+    display: inline-block;
+
+}
+
+.mostrarMensajeVictoria{
+
+    margin: 30px 0 0 0;
+    font-size: 20px;
+
+}
+
+.img-ganador{
+
+    display: none;
+    margin: 30px 0 0 0;
+    height: 250px;
+    box-shadow: 10px 10px 30px 15px #ceb139 ;
+    
+
+}
+
+.boton-nuevoJuego{
+
+    margin: 40px 0 30px 20px;
+    width: 284px;
+    display: none;
+    background:  #f29945;
+    border: 2px solid  #f29945;
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.boton-nuevoJuego:hover{
+
+    background: #dd6026;
+    border: 2px solid  #dd6026;
+
+}
+
+.boton-desistir{
+
+    margin-left: 10px;
+    width: 284px;
+    display: none;
+    background-color: antiquewhite;
+    border: 2px solid  #f29945;
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.boton-desistir:hover{
+
+    background: #f3b47a;
+    border: 2px solid  #f29945;
+
+}
+
+.boton-nuevoJuegoUs{
+
+    margin: 40px 0 30px 20px;
+    width: 284px;
+    display: none;
+    background:  #f29945;
+    border: 2px solid  #f29945;
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.boton-nuevoJuegoUs:hover{
+
+    background: #dd6026;
+    border: 2px solid  #dd6026;
+
+}
+
+.boton-desistirUs{
+
+    margin-left: 10px;
+    width: 284px;
+    display: none;
+    background-color: antiquewhite;
+    border: 2px solid  #f29945;
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.boton-desistirUs:hover{
+
+    background: #f3b47a;
+    border: 2px solid  #f29945;
+
+}
+
+
+
+footer{
+
+    background: #000000;
+    background-size:cover;
+
+}
+
+.caja-footer{
+
+    margin: 30px;
+    text-align: center;
+    background: #000000;
+    background-size:cover;
+}
+
+.pie-pagina{
+
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+.img-footer{
+
+    text-align: center;
+
+}
+
+@media screen and (max-width: 480px){
+
+    .logo-alura{
+
+        margin: 40px 0 0 184px;
+
+    }
+
+    .titulo-ahorcado{
+
+        margin: 20px 0 20px 0;
+        font-size: 30px;
+
+    }
+
+    main{
+
+        background: rgba(255, 255, 255, 0.8);
+        width: 100%;
+    
+    }
+
+    .boton-iniciarJuego{
+
+        margin: 100px 0 0 0;
+
+    }
+
+    .boton-AgregarNueva{
+
+        margin: 62px 0 0 0;
+
+    }
+
+    .pie-pagina{
+
+        margin-bottom: 30px;
+        
+    }
+
+    .img-footer{
+
+        display: none;
+
+    }
+
+    .boton-desistir{
+
+        margin: 0 0 0 20px;
+        margin-bottom: 50px;
+
+    }
+
+    .ingresar-nuevaPalabra{
+        
+        width: 300px;
+        font-size: 20px;
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+
+    .maximo-letras{
+
+        text-align: center;
+        margin: 663px 0 0 0;
+
+    }
+
+    .boton-guardarEmpezar{
+
+        text-align: center;
+        margin: 80px 0 0 0;
+
+    }
+
+    .boton-cancelar{
+
+        text-align: center;
+        margin: 30px 0 0 0;
+
+    }
+
+    .mostrarMensajeVictoria{
+
+        margin: 130px 0 0 0;
+
+    }
+
+    .mostrarMensajeDerrota{
+
+        margin: 10px 0 0 0;
+
+    }
+
+    .boton-nuevoJuegoUs{
+
+        margin: 80px 0 0 0;
+
+    }
+
+    .boton-desistirUs{
+
+        margin: 30px 20px 0 20px;
+        margin-bottom: 50px;
+
+    }
+}
+
+
+
