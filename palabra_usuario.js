@@ -13,6 +13,7 @@ function guardarPalabraUsuario(){
     resultadoUs.value = '';
     msjVictoria.innerHTML = '';
     msjDerrota.innerHTML = '';
+    erradas = [];
 
     if(ingresaPalabraNueva.value.toUpperCase().length <= 8){
     
@@ -77,7 +78,9 @@ function verificaLetraUsuario(event) {
     }
         if(acerto == false){
 
-            verErradas.innerHTML = letra;
+            erradas.push(letra);
+            verErradas.innerHTML = erradas;
+            console.log(erradas);
             console.log('No presiono la letra correcta');
             errores++;
             imagen.src = `imagenes/horca/${errores}.png`;

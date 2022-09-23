@@ -27,7 +27,8 @@ let errores = 0;
 let letra;
 let sorteo; 
 let palabra;
-let verErradas; 
+let verErradas;
+let erradas = [];
 
 btnAgregarPalabraSec.onclick = ocultarInicio;
 btnIniciarJuego.onclick = iniciarJuego;
@@ -78,6 +79,7 @@ function iniciarJuego(){
     aciertos = 0;
     errores = 0;
     imagen.src = `imagenes/horca/0.png`;
+    erradas = [];
         
     resultado.style.display = 'inline-block';
     btnNuevoJuego.style.display = 'inline-block';
@@ -127,12 +129,13 @@ function verificaLetra(event) {
     }
         if(acerto == false){
 
-            verErradas.innerHTML = letra;
+            erradas.push(letra);
+            verErradas.innerHTML = erradas;
+            console.log(erradas);
             console.log('No presiono la letra correcta');
             errores++;
             imagen.src = `imagenes/horca/${errores}.png`;
-            
-            
+              
         }
 
     verMensajeDerrota();
